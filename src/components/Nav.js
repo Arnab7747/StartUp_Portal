@@ -2,24 +2,26 @@ import React, { Component } from "react";
 import imag from "./Logo.png";
 
 export class Navbar extends Component {
+  
   render() {
     return (
       <div>
+        
         <nav class="navbar bg-body-tertiary">
           <div class="container">
             <a class="navbar-brand" href="/">
-              <img src={imag} alt="Bootstrap" width="" height="46" />
+              <img src={imag} alt="Bootstrap" width="" height="48" />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Azadi-Ka-Amrit-Mahotsav-Logo.png"
                 alt="Bootstrap"
                 width=""
-                height="40"
+                height="45"
               />
               <img
                 src="https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2020/08/11134138/Ministry-of-AYUSH-logo.jpg"
                 alt="Bootstrap"
                 width=""
-                height="38"
+                height="45"
               />
             </a>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -36,7 +38,7 @@ export class Navbar extends Component {
           </div>
         </nav>
 
-        <nav className="navbar navbar-expand-lg ">
+        <nav className="navbar navbar-expand-lg " >
           <div className="container-fluid">
             <button
               className="navbar-toggler"

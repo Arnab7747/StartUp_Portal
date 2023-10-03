@@ -27,6 +27,7 @@ const Home = () => {
     setCurrentState(currentState);
   };
   return (
+    
     <div className="container-style">
       <div style={bgImageStyle}></div>
       <div className="description">
