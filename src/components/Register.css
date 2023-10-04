@@ -1,0 +1,22 @@
+
+
+.container-style{
+    margin-top: 5%;
+    height: 150%;
+    
+    padding-left: 10vw;
+    padding-right: 10vw;
+   
+}
+
+.box{
+    margin: 20px;
+    padding: 4vw;
+    background-color: rgb(244, 244, 244);
+    border-radius: 30px;
+    box-shadow: black 2px 2px;
+}
+.header{
+    text-align: center;
+    
+}

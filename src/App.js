@@ -2,6 +2,8 @@ import Nav from './components/Nav';
 import Slider from './components/Slider';
 import './App.css'
 import Home from "./components/Home";
+import Footer from './components/Footer';
+// import Register from "./components/Register";
 
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
       <Nav/>
       <Slider/>
       <Home/>
+      <Footer/>
+      {/* <Register/> */}
 
     </div>
   );

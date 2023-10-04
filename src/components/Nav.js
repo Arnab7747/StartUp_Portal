@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import imag from "./Logo.png";
+
 
 export class Navbar extends Component {
   
@@ -10,7 +10,7 @@ export class Navbar extends Component {
         <nav class="navbar bg-body-tertiary">
           <div class="container">
             <a class="navbar-brand" href="/">
-              <img src={imag} alt="Bootstrap" width="" height="48" />
+              <img src="./Logo.png" alt="Bootstrap" width="" height="48" />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Azadi-Ka-Amrit-Mahotsav-Logo.png"
                 alt="Bootstrap"

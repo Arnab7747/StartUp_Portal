@@ -108,7 +108,7 @@ export default function Home() {
       </div>
 
       <div className="StartupEcoSystem">
-        <h1 className="header">Startup EcoSystem</h1>
+        <h1 className="header">Startup Ecosystem</h1>
 
         <div className="container">
           <div className="row justify-content-between">
@@ -129,9 +129,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="card" style={Styles}>
+            
+
+            <div className="card " style={Styles}>
               <img src="./2.png" className="card-img-top" alt="..." />
-              <div className="card-body">
+              <div className="card-body ">
                 <h5 className="card-title">Mentorship</h5>
                 <p className="card-text">
                   Some quick example text to build on the card title and make up
@@ -181,6 +183,9 @@ export default function Home() {
         </p>
       </div>
 
+
+      <div class="text-center">
+
       <button
         class="btn btn-primary"
         type="button"
@@ -190,6 +195,7 @@ export default function Home() {
       >
         Know The Minister
       </button>
+      </div>
 
       <div
         class="offcanvas offcanvas-start"
