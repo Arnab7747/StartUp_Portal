@@ -1,12 +1,18 @@
 .main{
-    margin: 5vw;
+    margin: 4vw;
     text-align: justify;
+    padding: auto;
+    
 }
 .header{
     text-align: center;
 }
-.StartupEcoSystem{
-    margin: 20px;
-    padding: 12px;
+.StartupEcoSystem,.Scheme{
+    margin: 25px;
+    padding: 18px;
+
+}
+.card-body{
+    text-align: center;
 
 }

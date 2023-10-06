@@ -1,44 +1,43 @@
 import React, { Component } from "react";
 
-
 export class Navbar extends Component {
-  
   render() {
     return (
       <div>
-        
-        <nav class="navbar bg-body-tertiary">
-          <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
             <a class="navbar-brand" href="/">
-              <img src="./Logo.png" alt="Bootstrap" width="" height="48" />
+              <img src="./Logo.png" alt="Bootstrap" width="10%" height="auto" />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Azadi-Ka-Amrit-Mahotsav-Logo.png"
                 alt="Bootstrap"
-                width=""
-                height="45"
+                width="10%"
+                height="auto"
               />
               <img
                 src="https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2020/08/11134138/Ministry-of-AYUSH-logo.jpg"
                 alt="Bootstrap"
-                width=""
-                height="45"
+                width="10%"
+                height="auto"
               />
             </a>
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="d-flex">
-                <a className="nav-link active" aria-current="page" href="/">
-                  Register |
-                </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li className="d-flex">
+                  <a className="nav-link active" aria-current="page" href="/">
+                    Register
+                  </a>
 
-                <a className="nav-link active" aria-current="page" href="/">
-                  LogIn
-                </a>
-              </li>
-            </ul>
+                  <a className="nav-link active" aria-current="page" href="/">
+                    LogIn
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
 
-        <nav className="navbar navbar-expand-lg " >
+        <nav className="navbar navbar-expand-lg ">
           <div className="container-fluid">
             <button
               className="navbar-toggler"
@@ -62,13 +61,29 @@ export class Navbar extends Component {
                   </a>
                 </li>
 
-
-                <li className="nav-item">
-                  <a className="nav-link" href="/">
-                    Funding & Schemes
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="/"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Schemes & Policies
                   </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a className="dropdown-item" href="/">
+                        Central Goverment Schemes
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/">
+                        Ministry of Ayush Schemes
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-
 
                 <li className="nav-item dropdown">
                   <a
@@ -99,10 +114,7 @@ export class Navbar extends Component {
                         Something else here
                       </a>
                     </li>
-
-  
                   </ul>
-
                 </li>
 
                 <li className="nav-item dropdown">
@@ -126,11 +138,7 @@ export class Navbar extends Component {
                         Showcase Startup
                       </a>
                     </li>
-                    
-
-  
                   </ul>
-
                 </li>
 
                 <li className="nav-item">
@@ -143,10 +151,6 @@ export class Navbar extends Component {
                     About
                   </a>
                 </li>
-
-
-
-
               </ul>
             </div>
           </div>
