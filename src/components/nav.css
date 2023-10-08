@@ -1,0 +1,11 @@
+#log{
+    border-radius: 10px;
+    width: 10vw;
+    padding: 5px;
+    background-color: rgb(67, 92, 255);
+  color: white;
+}
+#log:hover {
+    background-color: rgb(46, 190, 67);
+    color: white;
+  }

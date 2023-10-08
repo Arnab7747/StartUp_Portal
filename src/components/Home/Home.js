@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/Home.css";
+import '../Home/Home.css'
 
 export default function Home() {
   const Styles = {

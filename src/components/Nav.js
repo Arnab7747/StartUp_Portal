@@ -1,7 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
+import { useAuth0 } from "@auth0/auth0-react"
+import '../components/nav.css'
 
-export class Navbar extends Component {
-  render() {
+export default function Nav() {
+  const { loginWithRedirect } = useAuth0()
+ 
     return (
       <div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -24,13 +27,11 @@ export class Navbar extends Component {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="d-flex">
-                  <a className="nav-link active" aria-current="page" href="/">
-                    Register
-                  </a>
+                  <div className="nav-link active" aria-current="page" href="/">
+                  <button id="log" onClick={() => loginWithRedirect()}>Register LogIn</button>
+                  </div>
 
-                  <a className="nav-link active" aria-current="page" href="/">
-                    LogIn
-                  </a>
+                  
                 </li>
               </ul>
             </div>
@@ -73,7 +74,7 @@ export class Navbar extends Component {
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item" href="/">
+                      <a className="dropdown-item" href='../components/Scheme.js'>
                         Central Goverment Schemes
                       </a>
                     </li>
@@ -158,6 +159,6 @@ export class Navbar extends Component {
       </div>
     );
   }
-}
 
-export default Navbar;
+
+
