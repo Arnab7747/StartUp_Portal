@@ -31,10 +31,11 @@ const Home = () => {
     <div className="container-style">
       <div style={bgImageStyle}></div>
       <div className="description">
-        <div>
+        
+        <div className="box">
           <h1>{imageSlide[currentState].title}</h1>
           <p>{imageSlide[currentState].body}</p>
-        </div>
+          </div>
         <div className="body1">
           {imageSlide.map((imageSlide, currentState) => (
             <span key={currentState} onClick={() => goToNext(currentState)}>

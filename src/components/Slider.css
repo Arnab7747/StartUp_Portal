@@ -11,6 +11,9 @@
 
     color: aliceblue;
     top:20%;
+    
+   padding-left: 2vw;
+   padding-right: 2vw;
    
     
     width: 100%;
@@ -18,6 +21,11 @@
     height: auto;
     
 
+}
+.box{
+    background-color: rgba(147, 147, 147, 0.377);
+    border-radius: 10px;
+    padding: 5vw;
 }
 .description h1{
     font-size: 4vw;
@@ -40,3 +48,11 @@
     border-radius: 10px;
 }
 
+@media (max-width: 767px) {
+    .description h1{
+        font-size: 10vw;
+    }
+    .description p{
+        font-size: 6vw;
+    }
+}
