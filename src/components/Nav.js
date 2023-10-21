@@ -1,8 +1,9 @@
 import React from "react";
-import { useAuth0 } from "@auth0/auth0-react"
-import '../components/nav.css'
+import { useAuth0 } from "@auth0/auth0-react";
+import "../components/nav.css";
 
 export default function Nav() {
+<<<<<<< HEAD
   const { loginWithRedirect } = useAuth0()
 
   return (
@@ -10,6 +11,15 @@ export default function Nav() {
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
+=======
+  const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
+
+  return (
+    <div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+>>>>>>> 3312a6d7b807780f9cc049d678c89cd5a455ee3b
             <img src="./Logo.png" alt="Bootstrap" width="10%" height="auto" />
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Azadi-Ka-Amrit-Mahotsav-Logo.png"
@@ -24,6 +34,7 @@ export default function Nav() {
               height="auto"
             />
           </a>
+<<<<<<< HEAD
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="d-flex">
@@ -32,6 +43,37 @@ export default function Nav() {
                 </div>
 
 
+=======
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li className="d-flex">
+                {isAuthenticated ? (
+                  <button
+                    id="logout"
+                    onClick={() =>
+                      logout({
+                        logoutParams: { returnTo: window.location.origin },
+                      })
+                    }
+                  >
+                    Log Out
+                  </button>
+                ) : (
+                  <div className="nav-link active" aria-current="page" href="/">
+                    <button id="log" onClick={() => loginWithRedirect()}>
+                      Register LogIn
+                    </button>
+                  </div>
+                )}
+
+                {isAuthenticated && (
+                  <div >
+                    <img className="userimg" src={user.picture} alt={user.name} />
+                    
+                    
+                  </div>
+                )}
+>>>>>>> 3312a6d7b807780f9cc049d678c89cd5a455ee3b
               </li>
             </ul>
           </div>
@@ -51,10 +93,14 @@ export default function Nav() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+<<<<<<< HEAD
           <div
             className="collapse navbar-collapse"
             id="navbarSupportedContent"
           >
+=======
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+>>>>>>> 3312a6d7b807780f9cc049d678c89cd5a455ee3b
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/">
@@ -74,7 +120,11 @@ export default function Nav() {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
+<<<<<<< HEAD
                     <a className="dropdown-item" href='../components/Scheme.js'>
+=======
+                    <a className="dropdown-item" href="../components/Scheme.js">
+>>>>>>> 3312a6d7b807780f9cc049d678c89cd5a455ee3b
                       Central Goverment Schemes
                     </a>
                   </li>
@@ -135,7 +185,11 @@ export default function Nav() {
                     </a>
                   </li>
                   <li>
+<<<<<<< HEAD
                     <a className="dropdown-item" href="/startups">
+=======
+                    <a className="dropdown-item" href="/">
+>>>>>>> 3312a6d7b807780f9cc049d678c89cd5a455ee3b
                       Showcase Startup
                     </a>
                   </li>
@@ -159,6 +213,9 @@ export default function Nav() {
     </div>
   );
 }
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 3312a6d7b807780f9cc049d678c89cd5a455ee3b
