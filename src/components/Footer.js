@@ -4,7 +4,7 @@ import "../components/Footer.css";
 export default function Footer() {
   return (
     <div>
-      <div class="pt-5">
+      <div className="pt-5">
         <footer
           className="text-center text-lg-start text-white"
           style={{ backgroundColor: "#1c2331" }}
@@ -16,7 +16,7 @@ export default function Footer() {
             <div className="me-5">
               <div className="fotterImg">
                 <img src="./Logo.png" alt="Bootstrap" width="" height="48" />
-                
+
               </div>
             </div>
             <div>
@@ -151,7 +151,7 @@ export default function Footer() {
             className="text-center p-3"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
           >
-           
+
           </div>
         </footer>
       </div>
